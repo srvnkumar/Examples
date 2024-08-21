@@ -1,20 +1,35 @@
 package com.sanguine;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static java.lang.System.out;
+
 public class InsertionSort {
 
     public void insertionSort(int[] a) {
-        int temp;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[i] > a[j]) {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
+        int n = a.length;
+        for (int i = 1; i < n; i++) {
+            int key = a[i];
+            int j = i - 1;
 
+            while (j >= 0 && a[j] > key) {
+                a[j + 1] = a[j];
+                j = j - 1;
+            }
+            a[j + 1] = key;
+        }
+        print(a);
     }
+
+    public static void print(int[] a){
+        for(int i: a){
+            System.out.println(i);
+        }
+    }
+
+
 
 
 }
