@@ -1,11 +1,5 @@
 package com.sanguine;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static java.lang.System.out;
-
 public class InsertionSort {
 
     public void insertionSort(int[] a) {
