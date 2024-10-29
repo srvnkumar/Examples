@@ -12,4 +12,10 @@ public class Factorial {
         }
         return factorial;
     }
+
+    public static int recursiveFact(int n) {
+        if(n<=1)
+            return 1;
+        return n * recursiveFact(n-1);
+    }
 }

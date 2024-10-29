@@ -16,4 +16,15 @@ class FactorialTest {
     void invalidTestCase() {
         assertNotEquals(2,Factorial.fact(1));
     }
+
+    @Test
+    void recursiveFact() {
+        assertEquals(1,Factorial.recursiveFact(1));
+        assertEquals(2, Factorial.recursiveFact(2));
+        assertEquals(120, Factorial.recursiveFact(5));
+    }
+    @Test
+    void recursiveFactInvalidTestCase() {
+        assertNotEquals(2,Factorial.recursiveFact(1));
+    }
 }
