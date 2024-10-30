@@ -5,6 +5,6 @@ public class GcdEfficientOneRecursive {
         if(b == 0){
             return a;
         }
-        return gcd(a, a%b);//Euclidian Algorithm
+        return gcd(b, a%b);//Euclidian Algorithm
     }
 }

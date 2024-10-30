@@ -10,4 +10,9 @@ public class GcdEfficientOneRecursiveTest {
     void gcd() {
         assertEquals(100, GcdEfficientOneRecursive.gcd(100,200));
     }
+
+    @Test
+    void gcd2() {
+        assertEquals(2, GcdEfficientOneRecursive.gcd(4,6));
+    }
 }
