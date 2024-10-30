@@ -13,4 +13,9 @@ public class LcmBruteForce {
         }
         return res;
     }
+
+    public static int efficientLcm(int a, int b) {
+        System.out.println(GcdEfficientOneRecursive.gcd(a,b));
+        return a*b/GcdEfficientOneRecursive.gcd(a,b);
+    }
 }

@@ -20,4 +20,9 @@ public class LcmBruteForceTest {
     void lcm2(){
         assertEquals(12, LcmBruteForce.lcm(4,6));
     }
+
+    @Test
+    void lcmWithGcd(){
+        assertEquals(12, LcmBruteForce.efficientLcm(4,6));
+    }
 }
