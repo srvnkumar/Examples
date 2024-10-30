@@ -11,6 +11,7 @@
     <modules>
         <module>Sorting</module>
         <module>Patterns</module>
+        <module>GCD</module>
     </modules>
 
     <properties>
