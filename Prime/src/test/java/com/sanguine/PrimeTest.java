@@ -16,4 +16,15 @@ public class PrimeTest {
         assertFalse(Prime.isPrime(1));
         assertFalse(Prime.isPrime(4));
     }
+    @Test
+    void testPrimeEfficient(){
+        assertTrue(Prime.isPrimeEfficient(2));
+    }
+
+    @Test
+    void testNNotPrimeEfficient(){
+        assertFalse(Prime.isPrimeEfficient(1));
+        assertFalse(Prime.isPrimeEfficient(4));
+    }
+
 }
